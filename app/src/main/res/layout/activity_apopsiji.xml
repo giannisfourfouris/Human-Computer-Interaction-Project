@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity_apopsiji"
+    android:src="@drawable/bgma"
+    android:scaleType = "centerCrop"
+    android:background="@drawable/bgma"
+    tools:layout_editor_absoluteY="25dp">
+
+    <Button
+        android:id="@+id/apopsijiStart"
+        android:layout_width="183dp"
+        android:layout_height="85dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Εναρξη"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apopsijiTimeBar"
+        app:layout_constraintVertical_bias="0.185" />
+
+    <Button
+        android:id="@+id/apopsijiBackButton2"
+        android:layout_width="183dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="Πισω"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.057"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <SeekBar
+        android:id="@+id/apopsijiTimeBar"
+        style="@style/Widget.AppCompat.SeekBar.Discrete"
+        android:layout_width="610dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="8dp"
+        android:max="10"
+        android:progress="3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apopsijiTimeDisplay" />
+
+    <TextView
+        android:id="@+id/apopsijiTimeText"
+        android:layout_width="227dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="112dp"
+        android:layout_marginEnd="8dp"
+        android:text="Χρόνος"
+        android:textColor="@android:color/background_dark"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apopsijilinformation" />
+
+    <Button
+        android:id="@+id/apopsijilinformation"
+        android:layout_width="183dp"
+        android:layout_height="85dp"
+        android:layout_marginTop="16dp"
+        android:text="ΑΠΟΨΥΞΗ"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toEndOf="@+id/apopsijilinformationMain"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/apopsijilinformationMain"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="183dp"
+        android:layout_height="85dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="ΑΡΧΙΚΗ"
+        android:textColor="@android:color/background_dark"
+        android:textSize="30sp"
+        android:textStyle="italic"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/apopsijiTimeDisplay"
+        android:layout_width="398dp"
+        android:layout_height="201dp"
+        android:layout_marginTop="48dp"
+        android:text="00:00"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_dark"
+        android:textSize="120sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/apopsijiTimeText" />
+
+</android.support.constraint.ConstraintLayout>
